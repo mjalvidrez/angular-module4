@@ -6,7 +6,7 @@
 (function (){
     'use strict'
     angular.module('MenuApp')
-    .component('category', {
+    .component('categories', {
         templateUrl : 'categories.template.html',
         bindings : {
             categories : "<"
