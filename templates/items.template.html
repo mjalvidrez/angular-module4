@@ -1,0 +1,15 @@
+<!-- 
+    info to pass is named items
+    the controller is called ItemController as itemctrl
+ -->
+
+
+ <div items="items" ng-controller="ItemController as itemctrl">
+    <ul>
+        <li ng-repeat="items in itemctrl.categoies" 
+            class="items">
+            {{item.name}}
+            {{item.description}}
+        </li>
+    </ul>
+</div>

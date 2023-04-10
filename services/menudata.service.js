@@ -4,7 +4,7 @@
 // methods:
 
 (function () {
-    angular.model('MenuApp')
+    angular.module('MenuApp')
     .service('MenuDataService', MenuDataService);
 
     // getAllCategories - this method should return a promise which is a 
@@ -23,7 +23,7 @@
         service.getAllCategories = function () {
             return $http({
                 method : "GET",
-                url : ('https://coursera-jhu-default-rtdb.firebaseio.com/categories.json)')
+                url : ('https://coursera-jhu-default-rtdb.firebaseio.com/categories.json')
             })
             .then(function (result) {
                 return result.data;
@@ -34,7 +34,7 @@
         service.getItemsForCategories = function (categoryShortName) {
             return $http({
                 method : "GET",
-                url : ('https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{categoryShortName}.json'),
+                url : ('https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/' + categoryShortName + '.json'),
                 params : {
                     category : categoryShortName
                 }
@@ -45,4 +45,4 @@
         }
     }
 
-})
+})();

@@ -1,10 +1,11 @@
 (function () {
+    'use strict'
     angular.module('MenuApp')
-    .controller('categoriesController', CategoriesController);
+    .controller('CategoriesController', CategoriesController);
 
-    CategoriesController.$inject = ['items'];
-    function CategoriesController(items) { 
-        var cat = this;
-        cat.items = items.data;
+    CategoriesController.$inject = ['categories'];
+    function CategoriesController(categories) { 
+        var catctrl = this;
+        catctrl.items = categories.data;
     }
 })();

@@ -43,7 +43,7 @@
         // category page 
         .state('categories', {
             url : '/categories', 
-            templateUrl : 'template/categories.template.html',
+            templateUrl : 'templates/categories.template.html',
             controller : 'CategoriesController as catctrl',
             resolve : {
                 categories : ['MenuDataService', (MenuDataService) => { 

@@ -1,0 +1,15 @@
+<!-- 
+    info to pass is named categories
+    the controller is called CategoriesController
+ -->
+
+
+<div categories="categories" ng-controller="CategoriesController as catctrl">
+    <ul>
+        <li ng-repeat="categories in catctrl.categories" 
+            ui-sref="categories({short_name: categories.short_name})"
+            class="categories">
+            {{items}}
+        </li>
+    </ul>
+</div>
