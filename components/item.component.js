@@ -7,7 +7,7 @@
     .component('items', {
         templateUrl : 'items.template.html',
         bindings : {
-            items : "<"
+            catItems : "<"
         }
     });
 })();

@@ -4,10 +4,10 @@
  -->
 
 
-<div categories="categories" ng-controller="CategoriesController as catctrl">
+<div categories="categories">
     <ul>
         <li ng-repeat="categories in catctrl.categories" 
-            ui-sref="categories({short_name: categories.short_name})"
+            ui-sref="items({short_name: categories.short_name})"
             class="categories">
             {{categories.name}}
         </li>

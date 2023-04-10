@@ -26,7 +26,7 @@
                 url : ('https://coursera-jhu-default-rtdb.firebaseio.com/categories.json')
             })
             .then(function (result) {
-                return result.data;
+                return result;
             });
         }
 
@@ -40,7 +40,7 @@
                 }
             })
             .then(function (result) {
-                return result.data;
+                return result;
             });
         }
     }

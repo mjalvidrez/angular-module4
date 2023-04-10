@@ -4,9 +4,9 @@
  -->
 
 
- <div items="items" ng-controller="ItemController as itemctrl">
+ <div cat-items="items">
     <ul>
-        <li ng-repeat="items in itemctrl.categoies" 
+        <li ng-repeat="item in itemctrl.items"
             class="items">
             {{item.name}}
             {{item.description}}

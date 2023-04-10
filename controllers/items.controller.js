@@ -6,7 +6,9 @@
     ItemController.$inject = ['items'];
     function ItemController(items) {
         var itemctrl = this;
-        itemctrl.items = items.daata
+        console.log(items.data);
+        itemctrl.items = items.data.menu_items;
+
     }
 
 })();
