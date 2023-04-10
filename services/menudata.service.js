@@ -4,7 +4,7 @@
 // methods:
 
 (function () {
-    angular.model('data')
+    angular.model('MenuApp')
     .service('MenuDataService', MenuDataService);
 
     // getAllCategories - this method should return a promise which is a 
@@ -40,7 +40,7 @@
                 }
             })
             .then(function (result) {
-                return result.data
+                return result.data;
             });
         }
     }

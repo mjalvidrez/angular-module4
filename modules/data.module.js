@@ -3,5 +3,5 @@
 
 (function () {
     'use strict'
-    angular.controller('MenuApp', ['data']);
+    angular.module('data', ['MenuDataService']);
 })();
